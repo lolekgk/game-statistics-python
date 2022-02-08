@@ -66,7 +66,7 @@ class Tester(unittest.TestCase):
         self.assertEqual(sorted_result, expected_result)
 
     def test_bonus_2_check_forbidden_functions(self):
-        with open("reports.py") as file:
+        with open(self.input_file) as file:
             lines = file.read()
             self.assertNotRegex(lines, r"\bsort(ed)?\(")
 
