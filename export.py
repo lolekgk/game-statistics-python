@@ -20,11 +20,6 @@ def save_results_to_a_file(results):
         f.write(results[i] + '\n')
     f.close()
 
-    f_reopened = open('results.txt', 'r')
-    for line in f_reopened:
-        print(line)
-    f_reopened.close()
-
 
 def save_results_to_a_list():
     production_year_result = production_year(source_file_name)
