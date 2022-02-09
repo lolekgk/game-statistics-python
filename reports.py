@@ -52,7 +52,6 @@ def get_fps_games_indexes(file_name):
         if genre_list[i] == 'First-person shooter':
             fps_game_indexes_list.append(i)
     return fps_game_indexes_list
-#############################################################################
 
 
 def count_games(file_name):
@@ -123,4 +122,3 @@ def when_was_top_sold_fps(file_name):
         return int(production_year_list[top_selling_fps_price_index])
     else:
         raise ValueError
-
