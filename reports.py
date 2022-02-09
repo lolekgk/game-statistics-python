@@ -1,6 +1,3 @@
-import export as e
-
-
 TITLE = 0
 SOLD_COPIES = 1
 PRODUCTION_YEAR = 2
