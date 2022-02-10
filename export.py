@@ -34,7 +34,7 @@ def production_year(file_name):
     if game_from_inputed_year:
         return str(game_from_inputed_year)
     else:
-        print(f"There is not any game in a file released in {input_year}.")  
+        return "There is not any game in a file released in this year"
 
    
 def games_number_in_genre(file_name):
@@ -42,7 +42,7 @@ def games_number_in_genre(file_name):
     if genre_count:
         return str(genre_count)
     else:
-        print(f"There's no such genre - {input_genre}. Please enter another one!")
+        return "There's no such genre"
         
     
 def line_number_by_title(file_name):
@@ -50,7 +50,7 @@ def line_number_by_title(file_name):
         line_number = r.get_line_number_by_title(file_name, input_title)
         return str(line_number)
     except ValueError:
-        print("There's no such title. Please enter another one!")
+        return "There's no such title. Please enter another one!"
             
 
 if __name__ == "__main__":
